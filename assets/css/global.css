@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'NeueMachina-Light';
+    src: url('/assets/fonts/NeueMachina-Light.otf');
+}
+
+@font-face {
+    font-family: 'NeueMachina-Regular';
+    src: url('/assets/fonts/NeueMachina-Regular.otf');
+}
+
+@font-face {
+    font-family: 'NeueMachina-Ultrabold';
+    src: url('/assets/fonts/NeueMachina-Ultrabold.otf');
+}
+
+body {
+    background-color: #000;
+    color: white;
+}
+
+.main {
+    padding: 1rem;
+}
