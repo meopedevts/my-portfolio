@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets\css\global.css">
     <link rel="stylesheet" href="assets\css\header.css">
+    <link rel="stylesheet" href="assets\css\acordeon.css">
 </head>
 <body>
     <div class="main">
@@ -18,12 +19,27 @@
             <img src="assets\images\minha-foto-perfil-zap.jpg" alt="minha-foto" class="photo">
             <h1 class="title">Olá,<br> eu sou Marcelo Santos</h1>
             <div class="informations">
-                <p>Analista de Sistemas na Panice Tecnologia</p>
-                <p>Uberlândia - MG</p>
-                <p>(34) 98432-6089</p>
-                <p>marcelo.meope@icloud.com</p>
+                <p class="job">Analista de Sistemas na Panice Tecnologia</p>
+                <p class="local">Uberlândia - MG</p>
+                <p class="contact">(34) 98432-6089</p>
+                <p class="email">marcelo.meope@icloud.com</p>
             </div>
         </header>
+        <section class="acordeon open">
+            <button class="trigger" type="button">
+                Idioma
+            </button>
+            <div class="content">
+                <ul>
+                    <li>Português</li>
+                    <li>Inglês</li>
+                    <li>Italiano</li>
+                    <li>Espanhol</li>
+                </ul>
+            </div>
+        </section>
     </div>
+
+    <script src="/assets/js/acordeon.js"></script>
 </body>
 </html>

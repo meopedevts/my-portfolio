@@ -2,6 +2,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+.header::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('/assets/images/icons/header.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .header .photo {
@@ -13,4 +27,79 @@
 .header .title {
     text-align: center;
     font-family: 'NeueMachina-Light';
+}
+
+.informations {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+
+.informations p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .5rem;
+    font-size: 1.125rem;
+}
+
+.informations p::before {
+    content: '';
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: .5rem;
+}
+
+.informations .job::before {
+    background-image: url('/assets/images/icons/job.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.informations .contact::before {
+    background-image: url('/assets/images/icons/contact.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.informations .email::before {
+    background-image: url('/assets/images/icons/email.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.informations .local::before {
+    background-image: url('/assets/images/icons/local.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media screen and (min-width: 768px) {
+
+    .header {
+        display: grid;
+        grid-template: 
+            'photo title'
+            'photo informations'
+        ;
+    }
+    
+    .header .photo {
+        grid-area: photo;
+        margin: 0 auto;
+    }
+
+    .header .title {
+        grid-area: title;
+        text-align: start;
+        max-width: 16rem;
+    }
+
+    .header .informations {
+        grid-area: informations;
+        text-align: start;
+    }
+    
 }
