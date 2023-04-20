@@ -52,6 +52,15 @@
     margin-right: .5rem;
 }
 
+.informations .job a {
+    color: white;
+    text-decoration: none;
+}
+
+.informations .job a:hover {
+    text-decoration: underline;
+}
+
 .informations .job::before {
     background-image: url('/assets/images/icons/job.svg');
     background-repeat: no-repeat;
@@ -64,16 +73,43 @@
     background-size: contain;
 }
 
+.informations .contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.informations .contact a:hover {
+    text-decoration: underline;
+}
+
 .informations .email::before {
     background-image: url('/assets/images/icons/email.svg');
     background-repeat: no-repeat;
     background-size: contain;
 }
 
+.informations .email a {
+    color: white;
+    text-decoration: none;
+}
+
+.informations .email a:hover {
+    text-decoration: underline;
+}
+
 .informations .local::before {
     background-image: url('/assets/images/icons/local.svg');
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.informations .local a {
+    color: white;
+    text-decoration: none;
+}
+
+.informations .local a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {
