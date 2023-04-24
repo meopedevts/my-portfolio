@@ -1,0 +1,36 @@
+.skills {
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.skills .title {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.skills .skills_div {
+    padding-top: 1rem;
+
+}
+
+.skills .skills_img {
+    top: 0;
+    left: 0;
+    margin: 0.4rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+.skills .skills_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1rem;
+    grid-column-gap: 2rem;
+    font-size: 1.08rem;
+}
