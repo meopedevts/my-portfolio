@@ -5,7 +5,7 @@
     position: relative;
 }
 
-.header::after {
+/* .header::after {
     content: '';
     display: inline-block;
     position: absolute;
@@ -15,7 +15,35 @@
     height: 2rem;
     background-image: url('/assets/images/icons/header.svg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain; 
+}*/
+
+.header .div_button {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.header .div_button .download {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 6%;
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.header .div_button .download:hover {
+    cursor: pointer;
+}
+
+.header .div_button .download .dot_button {
+    width: 2rem;
+    height: 2rem;
 }
 
 .header .photo {
@@ -116,7 +144,8 @@
 
     .header {
         display: grid;
-        grid-template: 
+        grid-template:
+            'photo div_button'
             'photo title'
             'photo informations'
         ;

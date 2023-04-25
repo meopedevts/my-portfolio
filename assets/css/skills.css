@@ -28,9 +28,31 @@
 }
 
 .skills .skills_list {
+    padding-top: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 1rem;
     grid-column-gap: 2rem;
     font-size: 1.08rem;
+}
+
+@media screen and (max-width: 767px) {
+    .skills {
+        padding: 0;
+    }
+
+    .skills .skills_img {
+        padding-left: 1rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .skills .title {
+        font-size: 1rem;
+    }
+
+    .skills .skills_list {
+        font-size: 0.8rem;
+        padding-right: 1rem;
+    }
 }

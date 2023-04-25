@@ -15,11 +15,17 @@
     <link rel="stylesheet" href="assets\css\languages.css">
     <link rel="stylesheet" href="assets\css\projects.css">
     <link rel="stylesheet" href="assets\css\skills.css">
+    <link rel="stylesheet" href="assets\css\exp.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js">
+    </script>
     <!-- <link rel="stylesheet" href="assets\css\content_skills.css"> -->
 </head>
 <body>
     <div class="main">
         <header class="header">
+            <div class="div_button">
+                <button title="Download Curriculum" class="download" id="down" type="button" onclick="getDownload()"><img class="dot_button" src="/assets/images/icons/header.svg" alt="dot"></button>
+            </div>
             <img src="assets\images\minha-foto-perfil-zap.jpg" alt="minha-foto" class="photo">
             <h1 class="title">Olá,<br> eu sou Marcelo Santos</h1>
             <div class="informations">
@@ -37,6 +43,32 @@
                 </p>
             </div>
         </header>
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                Skills
+            </button>
+            <div class="content_skills">
+                <div class="skills">
+                    <span class="title">Habilidades profissionais:</span>
+                    <div class="skills_div">
+                        <img src="/assets/images/icons/javaicon.svg" alt="javaicon" class="skills_img">
+                        <img src="/assets/images/icons/jsicon.svg" alt="javaicon" class="skills_img">
+                        <img src="/assets/images/icons/reacticon.svg" alt="javaicon" class="skills_img">
+                        <img src="/assets/images/icons/githubwhite.svg" alt="javaicon" class="skills_img">
+                        <img src="/assets/images/icons/nodejs.svg" alt="javaicon" class="skills_img">
+                    </div>
+                </div>
+                <div class="skills">
+                    <span class="title">Habilidades pessoais:</span>
+                    <ul class="skills_list">
+                        <li>Proatividade</li>
+                        <li>Comunicação</li>
+                        <li>Trabalho em Equipe</li>
+                        <li>Aprendizado Constante</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <section class="acordeon">
             <button class="trigger" type="button">
                 Idioma
@@ -71,32 +103,26 @@
         </section>
         <section class="acordeon">
             <button class="trigger" type="button">
-                Skills
+                Experiência Profissional
             </button>
-            <div class="content_skills">
-                <div class="skills">
-                    <span class="title">Habilidades profissionais:</span>
-                    <div class="skills_div">
-                        <img src="/assets/images/icons/javaicon.svg" alt="javaicon" class="skills_img">
-                        <img src="/assets/images/icons/jsicon.svg" alt="javaicon" class="skills_img">
-                        <img src="/assets/images/icons/reacticon.svg" alt="javaicon" class="skills_img">
-                        <img src="/assets/images/icons/githubwhite.svg" alt="javaicon" class="skills_img">
-                        <img src="/assets/images/icons/nodejs.svg" alt="javaicon" class="skills_img">
-                    </div>
-                </div>
-                <div class="skills">
-                    <span class="title">Habilidades pessoais:</span>
-                    <ul class="skills_list">
-                        <li>Proatividade</li>
-                        <li>Comunicação</li>
-                        <li>Trabalho em Equipe</li>
-                        <li>Aprendizado Constante</li>
-                    </ul>
+            <div class="content">
+                <div class="experience">
+                    <div class="title">Analista de Sistemas / Panice Tecnologia</div>
+                    <div class="period">Jul 2021 - Atual</div>
+                    <p class="descritive">Suporte Sistema Sankhya W, Jiva W e Mitra.
+                        <br>Análise, montagem e correções de querys SQL banco Oracle e SQL Server.
+                        <br>Desenvolvimento, alteração e correção de relatórios formatados IReport
+                        <br>Desenvolvimento, alteração e correção de Dashboards Sistema Sankhya W e Jiva W
+                        <br>Suporte ao usuário no uso do sistema
+                        <br>Mapeamento de processos e definição de escopo dentro do ecossistema Sankhya
+                        <br>Implementação e automatização de processos através de integrações e desenvolvimento de rotinas Java.
+                    </p>
                 </div>
             </div>
         </section>
     </div>
 
     <script src="/assets/js/acordeon.js"></script>
+    <script src="/assets/js/download.js"></script>
 </body>
 </html>

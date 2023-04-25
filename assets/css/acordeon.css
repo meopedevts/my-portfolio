@@ -74,3 +74,11 @@
     max-height: 500px;
     transition: max-height 0.5s ease-in;
 }
+
+@media screen and (max-width: 767px) {
+
+    .acordeon .content_skills {
+        display: flex;
+        flex-direction: column;
+    }
+}
