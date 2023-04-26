@@ -39,7 +39,7 @@
     margin-top: .5rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('/assets/images/icons/arrow-top.svg');
+    background-image: url('../images/icons/arrow-top.svg');
     transition: .25s;
 }
 
