@@ -8,7 +8,7 @@ function getDownload() {
 
 function download() {
     axios({
-        url: 'https://download1493.mediafire.com/9jjza4z6rjaggb6qzxqwtW4G2oWlThNXjc93J1x_ZHbROeg_t45AQJwL_IhbT_B7OytNu6xP0Y7-5DMuRcmr-K8DprtF8Hg/tcuhtk6fdax10qh/Curriculum.pdf',
+        url: 'https://shareallfiles.net/eiC3yM',
         method: 'GET',
         responseType: 'blob'
     })
